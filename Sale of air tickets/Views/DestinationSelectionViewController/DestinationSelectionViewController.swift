@@ -63,11 +63,6 @@ class DestinationSelectionViewController: UIViewController {
         fromTextField.text = UserDefaults.standard.string(forKey: Resources.UserDefaults.TextField.lastFromTextFieldValue)
     }
     
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        collectionView.frame = CGRect(x: 20, y: 190, width: view.frame.size.width, height: 110).integral
-    }
-    
     @objc func clearToTextField() {
         toTextField.text = ""
     }

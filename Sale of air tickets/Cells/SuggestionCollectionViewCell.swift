@@ -26,7 +26,6 @@ class SuggestionCollectionViewCell: UICollectionViewCell {
         super.init(frame: frame)
         contentView.addSubview(iconImageView)
         contentView.addSubview(titleLabel)
-        
         NSLayoutConstraint.activate([
             iconImageView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10),
             iconImageView.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),

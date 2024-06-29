@@ -77,13 +77,16 @@ class DestinationSelectionViewManager {
     func createCollectionView() -> UICollectionView {
 
          let collectionView: UICollectionView = {
-            let layout = UICollectionViewFlowLayout()
+            let layout = CenteredCollectionViewFlowLayout()
             layout.scrollDirection = .horizontal
+             layout.minimumInteritemSpacing = 0
+             layout.minimumLineSpacing = 0
             layout.itemSize = CGSize(width: 90, height: 110)
-            layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
             let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
             collectionView.showsHorizontalScrollIndicator = false
+             collectionView.translatesAutoresizingMaskIntoConstraints = false
             collectionView.backgroundColor = .none
+             
             return collectionView
         }()
         return collectionView
@@ -208,5 +211,24 @@ class DestinationSelectionViewManager {
             return stack
         }()
         return hStackCountry
+    }
+}
+
+class CenteredCollectionViewFlowLayout: UICollectionViewFlowLayout {
+    override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
+        let attributes = super.layoutAttributesForElements(in: rect)
+        attributes?.forEach { layoutAttribute in
+            if layoutAttribute.representedElementCategory == .cell {
+                let cellWidth = layoutAttribute.frame.width
+                let collectionViewWidth = collectionView!.frame.width
+                let totalCellWidth = cellWidth * CGFloat(collectionView!.numberOfItems(inSection: 0))
+                let totalSpacingWidth = minimumInteritemSpacing * CGFloat(collectionView!.numberOfItems(inSection: 0) - 1)
+                let totalWidth = totalCellWidth + totalSpacingWidth
+                let leftInset = (collectionViewWidth - totalWidth) / 2
+                let rightInset = leftInset
+                sectionInset = UIEdgeInsets(top: sectionInset.top, left: leftInset, bottom: sectionInset.bottom, right: rightInset)
+            }
+        }
+        return attributes
     }
 }

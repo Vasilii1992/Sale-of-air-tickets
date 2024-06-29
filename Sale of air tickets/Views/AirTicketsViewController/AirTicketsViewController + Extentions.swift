@@ -19,9 +19,11 @@ extension AirTicketsViewController {
             backIntoSearchBar.trailingAnchor.constraint(equalTo: backForSearchBar.trailingAnchor, constant: -20),
             backIntoSearchBar.bottomAnchor.constraint(equalTo: backForSearchBar.bottomAnchor, constant: -20),
             
-            searchStack.topAnchor.constraint(equalTo: backIntoSearchBar.topAnchor, constant: 20),
+            searchStack.topAnchor.constraint(equalTo: backIntoSearchBar.topAnchor, constant: 10),
             searchStack.leadingAnchor.constraint(equalTo: backIntoSearchBar.leadingAnchor, constant: 20),
             searchStack.trailingAnchor.constraint(equalTo: backIntoSearchBar.trailingAnchor, constant: -20),
+            searchStack.bottomAnchor.constraint(equalTo: backIntoSearchBar.bottomAnchor, constant: -10),
+
             searchStack.heightAnchor.constraint(equalToConstant: 80)
         ])
     }

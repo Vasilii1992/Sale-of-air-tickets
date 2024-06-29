@@ -19,6 +19,12 @@ extension DestinationSelectionViewController {
             stackForTextFields.trailingAnchor.constraint(equalTo: searchView.trailingAnchor, constant: -10),
             stackForTextFields.bottomAnchor.constraint(equalTo: searchView.bottomAnchor, constant: -10),
             
+            collectionView.topAnchor.constraint(equalTo: searchView.bottomAnchor, constant: 20),
+            collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            collectionView.heightAnchor.constraint(equalToConstant: 110),
+                       
+
             backgroundForTheBottom.topAnchor.constraint(equalTo: collectionView.bottomAnchor, constant: 20),
             backgroundForTheBottom.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
             backgroundForTheBottom.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
@@ -34,6 +40,7 @@ extension DestinationSelectionViewController {
             
         ])
     }
+    
 }
 
 extension DestinationSelectionViewController: UICollectionViewDelegate, UICollectionViewDataSource {

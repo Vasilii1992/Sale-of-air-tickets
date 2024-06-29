@@ -260,7 +260,7 @@ class ViewManager {
          lazy var stackForTextFields: UIStackView = {
             let stack = UIStackView()
             stack.axis = .vertical
-            stack.distribution = .equalSpacing
+             stack.distribution = .equalSpacing
             stack.alignment = .leading
             stack.spacing = 10
             stack.translatesAutoresizingMaskIntoConstraints = false
@@ -323,8 +323,8 @@ class ViewManager {
          lazy var backIntoSearchBar: UIView = {
             let back = UIView()
             back.translatesAutoresizingMaskIntoConstraints = false
-            back.widthAnchor.constraint(equalToConstant: view.frame.width - 20).isActive = true
-            back.heightAnchor.constraint(equalToConstant: height).isActive = true
+            back.widthAnchor.constraint(equalToConstant: 296).isActive = true
+            back.heightAnchor.constraint(equalToConstant: 90).isActive = true
             back.layer.cornerRadius = 25
             back.layer.cornerCurve = .continuous
             back.clipsToBounds = false
