@@ -1,0 +1,564 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6B43F59D2C299C8F00035AF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B43F59C2C299C8F00035AF0 /* AppDelegate.swift */; };
+		6B43F59F2C299C8F00035AF0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B43F59E2C299C8F00035AF0 /* SceneDelegate.swift */; };
+		6B43F5A12C299C8F00035AF0 /* AirTicketsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B43F5A02C299C8F00035AF0 /* AirTicketsViewController.swift */; };
+		6B43F5A62C299C9000035AF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B43F5A52C299C9000035AF0 /* Assets.xcassets */; };
+		6B43F5A92C299C9000035AF0 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 6B43F5A82C299C9000035AF0 /* Base */; };
+		6B43F5B42C299E3000035AF0 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B43F5B32C299E3000035AF0 /* TabBarController.swift */; };
+		6B43F5B62C299EC500035AF0 /* HotelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B43F5B52C299EC500035AF0 /* HotelsViewController.swift */; };
+		6B43F5B82C299F3000035AF0 /* ShortWayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B43F5B72C299F3000035AF0 /* ShortWayViewController.swift */; };
+		6B43F5BA2C299F8300035AF0 /* SubscriptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B43F5B92C299F8300035AF0 /* SubscriptionsViewController.swift */; };
+		6B43F5BC2C299FD300035AF0 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B43F5BB2C299FD300035AF0 /* ProfileViewController.swift */; };
+		6B43F5BE2C29A9F200035AF0 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B43F5BD2C29A9F200035AF0 /* Extentions.swift */; };
+		6B43F5C22C29CE3800035AF0 /* ViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B43F5C12C29CE3800035AF0 /* ViewManager.swift */; };
+		6B43F5C42C29FC3800035AF0 /* MusicCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B43F5C32C29FC3800035AF0 /* MusicCollectionViewCell.swift */; };
+		6B43F5C62C2AC1B700035AF0 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B43F5C52C2AC1B700035AF0 /* NetworkService.swift */; };
+		6B43F5C82C2AD0E500035AF0 /* DestinationSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B43F5C72C2AD0E500035AF0 /* DestinationSelectionViewController.swift */; };
+		6B43F5CD2C2AFDD200035AF0 /* SuggestionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B43F5CC2C2AFDD200035AF0 /* SuggestionCollectionViewCell.swift */; };
+		6B5E381A2C30211000F587A4 /* OtherViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5E38192C30211000F587A4 /* OtherViewManager.swift */; };
+		6B825A3A2C2C2BA100E7260C /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B825A392C2C2BA100E7260C /* SearchViewController.swift */; };
+		6B825A3C2C2C40C300E7260C /* SearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B825A3B2C2C40C300E7260C /* SearchCollectionViewCell.swift */; };
+		6B825A402C2C87EA00E7260C /* OffersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B825A3F2C2C87EA00E7260C /* OffersResponse.swift */; };
+		6B825A422C2D67D200E7260C /* AllTicketsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B825A412C2D67D200E7260C /* AllTicketsViewController.swift */; };
+		6B825A442C2D7EEE00E7260C /* TicketCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B825A432C2D7EEE00E7260C /* TicketCollectionViewCell.swift */; };
+		6B9D825C2C300E9200E26A81 /* AirTicketsViewController + Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9D825B2C300E9200E26A81 /* AirTicketsViewController + Extentions.swift */; };
+		6B9D82602C30100F00E26A81 /* TicketOffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9D825F2C30100F00E26A81 /* TicketOffer.swift */; };
+		6B9D82622C30104700E26A81 /* TicketResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9D82612C30104700E26A81 /* TicketResponse.swift */; };
+		6B9D82652C30161600E26A81 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9D82642C30161600E26A81 /* Resources.swift */; };
+		6BB665482C2F102900FE32F6 /* AllTicketsView + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB665472C2F102900FE32F6 /* AllTicketsView + Extensions.swift */; };
+		6BB6654B2C2F173E00FE32F6 /* SearchViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB6654A2C2F173E00FE32F6 /* SearchViewManager.swift */; };
+		6BB6654D2C2F250600FE32F6 /* SearchViewController + Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB6654C2C2F250600FE32F6 /* SearchViewController + Extentions.swift */; };
+		6BB665502C2F27AE00FE32F6 /* DestinationSelectionView + Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB6654F2C2F27AE00FE32F6 /* DestinationSelectionView + Extentions.swift */; };
+		6BB665522C2F299300FE32F6 /* DestinationSelectionViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB665512C2F299300FE32F6 /* DestinationSelectionViewManager.swift */; };
+		6BCA68822C2F072E0098370C /* AllTicketsViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCA68812C2F072E0098370C /* AllTicketsViewManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6B43F5992C299C8F00035AF0 /* Sale of air tickets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sale of air tickets.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B43F59C2C299C8F00035AF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6B43F59E2C299C8F00035AF0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6B43F5A02C299C8F00035AF0 /* AirTicketsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirTicketsViewController.swift; sourceTree = "<group>"; };
+		6B43F5A52C299C9000035AF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6B43F5A82C299C9000035AF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6B43F5AA2C299C9000035AF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B43F5B32C299E3000035AF0 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		6B43F5B52C299EC500035AF0 /* HotelsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelsViewController.swift; sourceTree = "<group>"; };
+		6B43F5B72C299F3000035AF0 /* ShortWayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortWayViewController.swift; sourceTree = "<group>"; };
+		6B43F5B92C299F8300035AF0 /* SubscriptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionsViewController.swift; sourceTree = "<group>"; };
+		6B43F5BB2C299FD300035AF0 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		6B43F5BD2C29A9F200035AF0 /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
+		6B43F5C12C29CE3800035AF0 /* ViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewManager.swift; sourceTree = "<group>"; };
+		6B43F5C32C29FC3800035AF0 /* MusicCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicCollectionViewCell.swift; sourceTree = "<group>"; };
+		6B43F5C52C2AC1B700035AF0 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		6B43F5C72C2AD0E500035AF0 /* DestinationSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationSelectionViewController.swift; sourceTree = "<group>"; };
+		6B43F5CC2C2AFDD200035AF0 /* SuggestionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionCollectionViewCell.swift; sourceTree = "<group>"; };
+		6B5E38192C30211000F587A4 /* OtherViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherViewManager.swift; sourceTree = "<group>"; };
+		6B825A392C2C2BA100E7260C /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		6B825A3B2C2C40C300E7260C /* SearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewCell.swift; sourceTree = "<group>"; };
+		6B825A3F2C2C87EA00E7260C /* OffersResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersResponse.swift; sourceTree = "<group>"; };
+		6B825A412C2D67D200E7260C /* AllTicketsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllTicketsViewController.swift; sourceTree = "<group>"; };
+		6B825A432C2D7EEE00E7260C /* TicketCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketCollectionViewCell.swift; sourceTree = "<group>"; };
+		6B9D825B2C300E9200E26A81 /* AirTicketsViewController + Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AirTicketsViewController + Extentions.swift"; sourceTree = "<group>"; };
+		6B9D825F2C30100F00E26A81 /* TicketOffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketOffer.swift; sourceTree = "<group>"; };
+		6B9D82612C30104700E26A81 /* TicketResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketResponse.swift; sourceTree = "<group>"; };
+		6B9D82642C30161600E26A81 /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
+		6BB665472C2F102900FE32F6 /* AllTicketsView + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AllTicketsView + Extensions.swift"; sourceTree = "<group>"; };
+		6BB6654A2C2F173E00FE32F6 /* SearchViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewManager.swift; sourceTree = "<group>"; };
+		6BB6654C2C2F250600FE32F6 /* SearchViewController + Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchViewController + Extentions.swift"; sourceTree = "<group>"; };
+		6BB6654F2C2F27AE00FE32F6 /* DestinationSelectionView + Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DestinationSelectionView + Extentions.swift"; sourceTree = "<group>"; };
+		6BB665512C2F299300FE32F6 /* DestinationSelectionViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationSelectionViewManager.swift; sourceTree = "<group>"; };
+		6BCA68812C2F072E0098370C /* AllTicketsViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllTicketsViewManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6B43F5962C299C8F00035AF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6B43F5902C299C8F00035AF0 = {
+			isa = PBXGroup;
+			children = (
+				6B43F59B2C299C8F00035AF0 /* Sale of air tickets */,
+				6B43F59A2C299C8F00035AF0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6B43F59A2C299C8F00035AF0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6B43F5992C299C8F00035AF0 /* Sale of air tickets.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6B43F59B2C299C8F00035AF0 /* Sale of air tickets */ = {
+			isa = PBXGroup;
+			children = (
+				6B43F5B02C299C9900035AF0 /* Applications */,
+				6B43F5CA2C2AFD7B00035AF0 /* NetworkService */,
+				6B43F5B22C299E1100035AF0 /* TabBar */,
+				6B9D825D2C300F4E00E26A81 /* Models */,
+				6B43F5B12C299D9A00035AF0 /* Views */,
+				6B43F5CB2C2AFD9A00035AF0 /* Cells */,
+				6B9D82632C3015F300E26A81 /* Helpers */,
+				6B43F5A52C299C9000035AF0 /* Assets.xcassets */,
+				6B43F5A72C299C9000035AF0 /* LaunchScreen.storyboard */,
+				6B43F5AA2C299C9000035AF0 /* Info.plist */,
+			);
+			path = "Sale of air tickets";
+			sourceTree = "<group>";
+		};
+		6B43F5B02C299C9900035AF0 /* Applications */ = {
+			isa = PBXGroup;
+			children = (
+				6B43F59E2C299C8F00035AF0 /* SceneDelegate.swift */,
+				6B43F59C2C299C8F00035AF0 /* AppDelegate.swift */,
+			);
+			path = Applications;
+			sourceTree = "<group>";
+		};
+		6B43F5B12C299D9A00035AF0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6B9D825A2C3007B900E26A81 /* AirTicketsViewController */,
+				6B9D82592C30078700E26A81 /* DestinationSelectionViewController */,
+				6BB6654E2C2F25B600FE32F6 /* SearchViewController */,
+				6BB665492C2F119A00FE32F6 /* AllTicketsView */,
+				6B43F5C92C2AFD4E00035AF0 /* OtherViews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6B43F5B22C299E1100035AF0 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				6B43F5B32C299E3000035AF0 /* TabBarController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		6B43F5C92C2AFD4E00035AF0 /* OtherViews */ = {
+			isa = PBXGroup;
+			children = (
+				6B43F5BB2C299FD300035AF0 /* ProfileViewController.swift */,
+				6B43F5B92C299F8300035AF0 /* SubscriptionsViewController.swift */,
+				6B43F5B72C299F3000035AF0 /* ShortWayViewController.swift */,
+				6B43F5B52C299EC500035AF0 /* HotelsViewController.swift */,
+				6B5E38192C30211000F587A4 /* OtherViewManager.swift */,
+			);
+			path = OtherViews;
+			sourceTree = "<group>";
+		};
+		6B43F5CA2C2AFD7B00035AF0 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				6B43F5C52C2AC1B700035AF0 /* NetworkService.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		6B43F5CB2C2AFD9A00035AF0 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				6B43F5C32C29FC3800035AF0 /* MusicCollectionViewCell.swift */,
+				6B43F5CC2C2AFDD200035AF0 /* SuggestionCollectionViewCell.swift */,
+				6B825A3B2C2C40C300E7260C /* SearchCollectionViewCell.swift */,
+				6B825A432C2D7EEE00E7260C /* TicketCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		6B9D82592C30078700E26A81 /* DestinationSelectionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6B43F5C72C2AD0E500035AF0 /* DestinationSelectionViewController.swift */,
+				6BB6654F2C2F27AE00FE32F6 /* DestinationSelectionView + Extentions.swift */,
+				6BB665512C2F299300FE32F6 /* DestinationSelectionViewManager.swift */,
+			);
+			path = DestinationSelectionViewController;
+			sourceTree = "<group>";
+		};
+		6B9D825A2C3007B900E26A81 /* AirTicketsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6B43F5A02C299C8F00035AF0 /* AirTicketsViewController.swift */,
+				6B9D825B2C300E9200E26A81 /* AirTicketsViewController + Extentions.swift */,
+				6B43F5C12C29CE3800035AF0 /* ViewManager.swift */,
+			);
+			path = AirTicketsViewController;
+			sourceTree = "<group>";
+		};
+		6B9D825D2C300F4E00E26A81 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6B825A3F2C2C87EA00E7260C /* OffersResponse.swift */,
+				6B9D825F2C30100F00E26A81 /* TicketOffer.swift */,
+				6B9D82612C30104700E26A81 /* TicketResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6B9D825E2C300F8500E26A81 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				6B43F5BD2C29A9F200035AF0 /* Extentions.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		6B9D82632C3015F300E26A81 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				6B9D825E2C300F8500E26A81 /* Extentions */,
+				6B9D82642C30161600E26A81 /* Resources.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		6BB665492C2F119A00FE32F6 /* AllTicketsView */ = {
+			isa = PBXGroup;
+			children = (
+				6B825A412C2D67D200E7260C /* AllTicketsViewController.swift */,
+				6BB665472C2F102900FE32F6 /* AllTicketsView + Extensions.swift */,
+				6BCA68812C2F072E0098370C /* AllTicketsViewManager.swift */,
+			);
+			name = AllTicketsView;
+			sourceTree = "<group>";
+		};
+		6BB6654E2C2F25B600FE32F6 /* SearchViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6B825A392C2C2BA100E7260C /* SearchViewController.swift */,
+				6BB6654C2C2F250600FE32F6 /* SearchViewController + Extentions.swift */,
+				6BB6654A2C2F173E00FE32F6 /* SearchViewManager.swift */,
+			);
+			path = SearchViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6B43F5982C299C8F00035AF0 /* Sale of air tickets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B43F5AD2C299C9000035AF0 /* Build configuration list for PBXNativeTarget "Sale of air tickets" */;
+			buildPhases = (
+				6B43F5952C299C8F00035AF0 /* Sources */,
+				6B43F5962C299C8F00035AF0 /* Frameworks */,
+				6B43F5972C299C8F00035AF0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Sale of air tickets";
+			productName = "Sale of air tickets";
+			productReference = 6B43F5992C299C8F00035AF0 /* Sale of air tickets.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6B43F5912C299C8F00035AF0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					6B43F5982C299C8F00035AF0 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = 6B43F5942C299C8F00035AF0 /* Build configuration list for PBXProject "Sale of air tickets" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6B43F5902C299C8F00035AF0;
+			productRefGroup = 6B43F59A2C299C8F00035AF0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6B43F5982C299C8F00035AF0 /* Sale of air tickets */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6B43F5972C299C8F00035AF0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B43F5A62C299C9000035AF0 /* Assets.xcassets in Resources */,
+				6B43F5A92C299C9000035AF0 /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6B43F5952C299C8F00035AF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BB6654B2C2F173E00FE32F6 /* SearchViewManager.swift in Sources */,
+				6B825A422C2D67D200E7260C /* AllTicketsViewController.swift in Sources */,
+				6B9D82652C30161600E26A81 /* Resources.swift in Sources */,
+				6BB6654D2C2F250600FE32F6 /* SearchViewController + Extentions.swift in Sources */,
+				6B43F5C62C2AC1B700035AF0 /* NetworkService.swift in Sources */,
+				6B825A442C2D7EEE00E7260C /* TicketCollectionViewCell.swift in Sources */,
+				6B9D82602C30100F00E26A81 /* TicketOffer.swift in Sources */,
+				6B43F5A12C299C8F00035AF0 /* AirTicketsViewController.swift in Sources */,
+				6B43F5B42C299E3000035AF0 /* TabBarController.swift in Sources */,
+				6B43F59D2C299C8F00035AF0 /* AppDelegate.swift in Sources */,
+				6B43F5CD2C2AFDD200035AF0 /* SuggestionCollectionViewCell.swift in Sources */,
+				6B9D82622C30104700E26A81 /* TicketResponse.swift in Sources */,
+				6BB665522C2F299300FE32F6 /* DestinationSelectionViewManager.swift in Sources */,
+				6B43F5C42C29FC3800035AF0 /* MusicCollectionViewCell.swift in Sources */,
+				6B43F5B62C299EC500035AF0 /* HotelsViewController.swift in Sources */,
+				6B43F59F2C299C8F00035AF0 /* SceneDelegate.swift in Sources */,
+				6BB665502C2F27AE00FE32F6 /* DestinationSelectionView + Extentions.swift in Sources */,
+				6B43F5B82C299F3000035AF0 /* ShortWayViewController.swift in Sources */,
+				6B825A3A2C2C2BA100E7260C /* SearchViewController.swift in Sources */,
+				6B825A3C2C2C40C300E7260C /* SearchCollectionViewCell.swift in Sources */,
+				6B9D825C2C300E9200E26A81 /* AirTicketsViewController + Extentions.swift in Sources */,
+				6B43F5C22C29CE3800035AF0 /* ViewManager.swift in Sources */,
+				6B43F5C82C2AD0E500035AF0 /* DestinationSelectionViewController.swift in Sources */,
+				6B5E381A2C30211000F587A4 /* OtherViewManager.swift in Sources */,
+				6BCA68822C2F072E0098370C /* AllTicketsViewManager.swift in Sources */,
+				6B43F5BC2C299FD300035AF0 /* ProfileViewController.swift in Sources */,
+				6BB665482C2F102900FE32F6 /* AllTicketsView + Extensions.swift in Sources */,
+				6B825A402C2C87EA00E7260C /* OffersResponse.swift in Sources */,
+				6B43F5BA2C299F8300035AF0 /* SubscriptionsViewController.swift in Sources */,
+				6B43F5BE2C29A9F200035AF0 /* Extentions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6B43F5A72C299C9000035AF0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B43F5A82C299C9000035AF0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6B43F5AB2C299C9000035AF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6B43F5AC2C299C9000035AF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6B43F5AE2C299C9000035AF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Sale of air tickets/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Vasilii.Sale-of-air-tickets";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6B43F5AF2C299C9000035AF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Sale of air tickets/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Vasilii.Sale-of-air-tickets";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6B43F5942C299C8F00035AF0 /* Build configuration list for PBXProject "Sale of air tickets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B43F5AB2C299C9000035AF0 /* Debug */,
+				6B43F5AC2C299C9000035AF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B43F5AD2C299C9000035AF0 /* Build configuration list for PBXNativeTarget "Sale of air tickets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B43F5AE2C299C9000035AF0 /* Debug */,
+				6B43F5AF2C299C9000035AF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6B43F5912C299C8F00035AF0 /* Project object */;
+}
