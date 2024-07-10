@@ -280,7 +280,7 @@ class ViewManager {
             let layout = UICollectionViewFlowLayout()
             layout.scrollDirection = .horizontal
             layout.itemSize = CGSize(width: 150, height: 200)
-            layout.minimumLineSpacing = 50
+            layout.minimumLineSpacing = 10
             layout.sectionInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
             let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
             collectionView.showsHorizontalScrollIndicator = false

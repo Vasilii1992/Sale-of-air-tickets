@@ -87,7 +87,10 @@ extension AirTicketsViewController: UITextFieldDelegate {
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
         if textField == toTextField {
             let destinationVC = DestinationSelectionViewController()
+            //для показа аргумента
             destinationVC.modalPresentationStyle = .pageSheet
+            // для выбора анимации 
+         //  destinationVC.modalTransitionStyle = .flipHorizontal
             destinationVC.delegate = self
             present(destinationVC, animated: true, completion: nil)
             return false

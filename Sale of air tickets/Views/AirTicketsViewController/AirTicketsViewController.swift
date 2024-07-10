@@ -3,7 +3,9 @@ import UIKit
 
 class AirTicketsViewController: UIViewController {
     
-    var offers: [Offer] = []
+    var offers: [Offer] = MockData.shared.offers
+    
+    
 
     private lazy var viewManager: ViewManager = {
         return ViewManager(controller: self)

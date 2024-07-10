@@ -11,7 +11,8 @@ class SearchViewController: UIViewController {
         return ViewManager(controller: self)
     }()
     
-     var ticketOffers: [TicketOffer] = []
+    var ticketOffers: [TicketOffer] = MockData.shared.ticketOffers
+    
     
     // создаем наш поисковик
      lazy var searchView = searchViewManager.createSearchView()
@@ -81,7 +82,8 @@ class SearchViewController: UIViewController {
         toTextField.text = UserDefaults.standard.string(forKey: Resources.UserDefaults.TextField.lastToTextFieldValue)
         navigationItem.hidesBackButton = true
         
-        fetchData()
+       // fetchData()
+        updateUI()
     }
     
     func addActionButton() {

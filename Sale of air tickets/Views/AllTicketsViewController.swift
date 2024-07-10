@@ -13,8 +13,8 @@ class AllTicketsViewController: UIViewController {
         return AllTicketsViewManager(controller: self)
     }()
     
-    var tickets: [Ticket] = []
-
+    var tickets: [Ticket] = MockData.shared.tickets
+    
      lazy var collectionView = viewManager.createCollectionView()
      lazy var searchView = viewManager.createSearchView()
      lazy var searchStack = viewManager.createSearchStack(fromToLabel: fromToLabel, infoLabel: infoLabel, tapGesture: UITapGestureRecognizer(target: self, action: #selector(backwardIconTapped)))
@@ -43,7 +43,7 @@ class AllTicketsViewController: UIViewController {
         setupConstraints()
         setupDelegate()
         createLabel()
-        fetchTickets()
+        //fetchTickets()
         
         navigationItem.hidesBackButton = true
 
